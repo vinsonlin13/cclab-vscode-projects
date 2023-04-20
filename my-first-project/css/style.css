@@ -1,0 +1,59 @@
+.content {
+    font-size: 40px;
+    padding-bottom: 300px;
+    color: skyblue; 
+    position: relative;
+    left: 10%;
+    width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 40px;
+    /* visibility: hidden; */
+    /* font-size: larger; */
+}
+
+.content.hover {
+    color: black;
+}
+
+a:hover {
+    color: white;
+    transition: color ls ease-in-out;
+}
+
+#hello {
+    background-color: lightgreen;
+}
+
+#bye {
+    background-color: aquamarine;
+}
+
+body {
+    background-color: antiquewhite;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#title {
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+    font-family: 'Rubik Pixels', cursive;
+    background-color: rgb(255, 253, 145);
+    width: 500px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    padding: 40px;
+    position: fixed;
+    left: 60%;
+}
+
+span{
+    font-weight: 500;
+}
+
+canvas{
+    position: fixed;
+    left: 60%;
+    top: 240px;
+}
