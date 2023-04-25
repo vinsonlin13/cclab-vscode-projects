@@ -1,0 +1,61 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 250px);
+}
+
+canvas2 {
+  display: block;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+p {
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 99%);
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.description {
+  font-size: 50px;
+  position: absolute;
+  top: calc(50% - 50px);
+  /* position: relative; */
+}
+
+.project {
+  /* position: relative; */
+  font-size: 30px;
+  /* padding: 20px; */
+  /* margin: 15px; */
+  /* border-style: solid; */
+}
