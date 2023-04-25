@@ -6,8 +6,7 @@ html, body {
 canvas {
   display: block;
   position: absolute;
-  /* top: calc(50% - 250px); */
-  left: calc(50% - 250px);
+  left: calc(50% - 300px);
 }
 
 canvas2 {
@@ -48,7 +47,7 @@ a:hover {
 .description {
   font-size: 20px;
   position: absolute;
-  top: calc(50% - 50px);
+  top: calc(30%);
   /* position: relative; */
 }
 
