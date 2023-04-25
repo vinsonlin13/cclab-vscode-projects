@@ -24,17 +24,6 @@ h1 {
   text-align: center;
 }
 
-p {
-  font-size: 50px;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  text-align: center;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, 99%);
-}
-
 a {
   color: blue;
   text-decoration: none;
@@ -44,16 +33,27 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  margin: 0px;
+  padding: 0px;
+  /* top: 100%; */
+}
+
 .description {
+  position: relative;
   font-size: 20px;
-  position: absolute;
-  top: calc(30%);
+  text-align: center;
+  transform: translate(0, 450%);
+  /* top: calc(30%); */
   /* position: relative; */
 }
 
 .project {
-  /* position: relative; */
+  position: relative;
   font-size: 30px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
   /* padding: 20px; */
   /* margin: 15px; */
   /* border-style: solid; */
