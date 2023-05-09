@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  left: calc(50% - 300px);
+}
+
+canvas2 {
+  display: block;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  /* top: 100%; */
+}
+
+.description {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  transform: translate(0, 450%);
+  /* top: calc(30%); */
+  /* position: relative; */
+}
+
+.project {
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  /* padding: 20px; */
+  /* margin: 15px; */
+  /* border-style: solid; */
+}
