@@ -6,6 +6,7 @@ let rectangles = [];
 let balls = [];
 let lasers = [];
 let shape;
+let mode = 0; 
 
 let blamSound;
 let ow1Sound;
@@ -40,6 +41,7 @@ function setup() {
   canvas.parent("canvasContainer");
   // createCanvas(400, 400);
   angleMode(DEGREES);
+  textAlign(CENTER);
   noStroke();
   slime = new Slime();
   // rectangle = new Rectangle();
@@ -63,6 +65,14 @@ function keyReleased() {
 
 function keyPressed() {
   // move
+  if (keyCode === ENTER) {
+    if (mode == 0) {
+      mode = 1; 
+    } else {
+      mode = 0;
+    }
+  }
+  
   if (keyCode === LEFT_ARROW) {
     slime.setDirX(-1);
   } else if (keyCode === RIGHT_ARROW) {
@@ -129,6 +139,47 @@ function keyPressed() {
 }
 
 function draw() {
+  if (mode == 0) {
+    menu();
+  }
+  if (mode == 1) {
+    game(); 
+  }
+  // if (keyPressed == true && keyCode === ENTER) {
+  // if (mouseIsPressed == true) {
+  //   mode = 1;
+  //   // if (mode == 0) {
+  //   //   mode = 1; 
+  //   // } else {
+  //   //   mode = 0;
+  //   // }
+  // }
+}
+
+function menu() {
+  background(135, 206, 235);
+  textFont('Georgia');
+  // title
+  textSize(50);
+  text('WINTER BLOOM', width/2, 80);
+  textSize(30);
+  text('BY VINSON LIN', width/2, 120);
+  
+  // instructions
+  text('HOW TO PLAY:', width/2, 180);
+  textSize(20);
+  text('LONG PRESS KEYS 1-4 FOR A SURPRISE', width/2, 210);
+  // text('PRESS ARROW KEYS TO MOVE', width/2, 300);
+  text('PRESS ENTER/RETURN TO START', width/2, 240);
+  // text('CLICK THE SCREEN TO START', width/2, 240);
+  
+  // description
+  textSize(15);
+  textWrap(WORD);
+  text('Description: In life, one is bombarded with internal and external stresses that makes one feel smaller. However, once you overcome them, they will be the catalyze that makes you stronger. Watch as our main character get pummeled into dust and revives from ashes.', 0, 280, width);
+}
+
+function game() {
   background(135, 206, 235);
   slime.show();
   slime.move();
@@ -393,7 +444,7 @@ class Laser {
     this.y = 0;
     this.wide = width * 0.4;
     this.tall = height / 20;
-    this.speed = 3;
+    this.speed = 2;
     this.r = 255;
     this.g = 251;
     this.b = 5;
